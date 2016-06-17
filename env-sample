@@ -1,0 +1,15 @@
+#**********************************************************
+# Terraform for Sakuracloud (author:yamamoto-febc)
+#**********************************************************
+# PLEASE RENAME THIS FILE TO ".env"
+# cp env-sample .env
+#**********************************************************
+
+# ACCESS_TOKEN
+#SAKURACLOUD_ACCESS_TOKEN=
+
+# ACCESS_TOKEN_SECRET
+#SAKURACLOUD_ACCESS_TOKEN_SECRET=
+
+# ZONE[is1a/is1b/tk1a] / default:is1a
+#SAKURACLOUD_ZONE=is1b
