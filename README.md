@@ -7,7 +7,8 @@
 
 - [`0.3.4-RC`,(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.3.4-RC/)
 - [`0.3.6`,(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.3.6/)
-- [`0.4.0`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.0/)
+- [`0.4.0`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.0/)
+- [`0.4.1`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.1/)
 
 
 ## 使い方(docker-composeを使う場合)
