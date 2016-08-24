@@ -1,17 +1,15 @@
-FROM alpine:3.4
+FROM hashicorp/terraform:0.7.1
 MAINTAINER Kazumichi Yamamoto <yamamoto.febc@gmail.com>
 
-RUN set -x && apk add --no-cache --virtual curl unzip ca-certificates bash && \
-    curl -LO https://github.com/andyshinn/alpine-pkg-glibc/releases/download/2.23-r1/glibc-2.23-r1.apk && \
-    apk add --allow-untrusted glibc-2.23-r1.apk && \
-    curl -L https://releases.hashicorp.com/terraform/0.7.1/terraform_0.7.1_linux_amd64.zip > /usr/local/bin/terraform.zip && \
-    unzip /usr/local/bin/terraform.zip -d /usr/local/bin && rm /usr/local/bin/terraform.zip && \
-    curl -L https://github.com/yamamoto-febc/terraform-provider-sakuracloud/releases/download/v0.4.1/terraform-provider-sakuracloud_linux-amd64.zip >/usr/local/bin/sakuracloud.zip && \
-    unzip /usr/local/bin/sakuracloud.zip -d /usr/local/bin && rm /usr/local/bin/sakuracloud.zip && \
-    chmod +x /usr/local/bin/terraform* 
+ENV TERRAFORM_SAKURACLOUD_VERSION=0.4.1
+
+ADD https://github.com/yamamoto-febc/terraform-provider-sakuracloud/releases/download/v${TERRAFORM_SAKURACLOUD_VERSION}/terraform-provider-sakuracloud_linux-amd64.zip ./
+RUN unzip terraform-provider-sakuracloud_linux-amd64.zip -d /bin
+RUN rm -f terraform-provider-sakuracloud_linux-amd64.zip
+
 
 VOLUME ["/work"]
 WORKDIR /work
 
-ENTRYPOINT ["/usr/local/bin/terraform"]
+ENTRYPOINT ["/bin/terraform"]
 CMD ["--help"]
