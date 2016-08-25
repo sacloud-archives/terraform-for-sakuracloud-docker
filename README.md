@@ -5,10 +5,24 @@
 
 ## `Dockerfile` links
 
-- [`0.3.4-RC`,(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.3.4-RC/)
 - [`0.3.6`,(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.3.6/)
 - [`0.4.0`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.0/)
-- [`0.4.1`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.1/)
+- [`0.4.1`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.1/)
+- [`0.4.2`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.4.2/)
+
+## 使い方(dockerコマンドを直接使う場合)
+
+### 起動コマンド書式
+
+```bash
+docker run -it --rm sacloud/terraform 実行したいコマンド
+```
+
+### `terraform plan`実行例
+```bash
+docker run -it --rm -e SAKURACLOUD_ACCESS_TOKEN -e SAKURACLOUD_ACCESS_TOKEN_SECRET -v $PWD:/work sacloud/terraform plan
+```
+
 
 
 ## 使い方(docker-composeを使う場合)
@@ -41,20 +55,5 @@ vi .env
 ```bash
 docker-compose run --rm terraform plan
 ```
-
-## 使い方(Docker Composeなし、dockerコマンドを直接使う場合)
-
-
-### 起動コマンド書式
-
-```bash
-docker run -it --rm sacloud/terraform 実行したいコマンド
-```
-
-### `terraform plan`実行例
-```bash
-docker run -it --rm -e SAKURACLOUD_ACCESS_TOKEN -e SAKURACLOUD_ACCESS_TOKEN_SECRET -v $PWD:/work sacloud/terraform plan
-```
-
 
 
