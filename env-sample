@@ -11,5 +11,5 @@
 # ACCESS_TOKEN_SECRET
 #SAKURACLOUD_ACCESS_TOKEN_SECRET=
 
-# ZONE[is1a/is1b/tk1a] / default:is1a
+# ZONE[is1a/is1b/tk1a] / default:is1b
 #SAKURACLOUD_ZONE=is1b
