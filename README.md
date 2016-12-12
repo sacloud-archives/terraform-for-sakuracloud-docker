@@ -5,7 +5,7 @@
 
 ## `Dockerfile` links
 
-- [`0.5.1`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.5.1/)
+- [`0.5.2`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.5.2/)
 
 ## 使い方(dockerコマンドを直接使う場合)
 
