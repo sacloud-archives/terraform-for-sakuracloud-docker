@@ -2,4 +2,4 @@ terraform:
   image: sacloud/terraform
   env_file: .env
   volumes:
-    - $PWD:/work/
+    - $PWD:/workdir/

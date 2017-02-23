@@ -1,11 +1,13 @@
 
 # Terraform for さくらのクラウド
 
-[Terraform for さくらのクラウド](https://github.com/yamamoto-febc/terraform-provider-sakuracloud)用Dockerイメージ
+[Terraform for さくらのクラウド](https://github.com/yamamoto-febc/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.8.7`)
 
 ## `Dockerfile` links
 
-  - [`0.6.1`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.6.1/)
+  - [`0.6.2`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.6.2/)
+
+**0.6.2からWORKDIRが`/workdir`へ変更されました**
 
 ## 使い方(dockerコマンドを直接使う場合)
 
@@ -17,9 +19,17 @@ docker run -it --rm sacloud/terraform 実行したいコマンド
 
 ### `terraform plan`実行例
 ```bash
-docker run -it --rm -e SAKURACLOUD_ACCESS_TOKEN -e SAKURACLOUD_ACCESS_TOKEN_SECRET -v $PWD:/work sacloud/terraform plan
+docker run -it --rm -e SAKURACLOUD_ACCESS_TOKEN -e SAKURACLOUD_ACCESS_TOKEN_SECRET -v $PWD:/workdir sacloud/terraform plan
 ```
 
+## 使い方(whalebrewを使う場合)
+
+```bash
+# インストール
+whalebrew install sacloud/terraform
+# 実行(-e SAKURACLOUD_ACCESS_TOKEN -e SAKURACLOUD_ACCESS_TOKEN_SECRET -v $PWD:/workdir が指定されている状態となる)
+terraform plan
+```
 
 
 ## 使い方(docker-composeを使う場合)
