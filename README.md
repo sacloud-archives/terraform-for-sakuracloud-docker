@@ -1,7 +1,7 @@
 
 # Terraform for さくらのクラウド
 
-[Terraform for さくらのクラウド](https://github.com/yamamoto-febc/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.0`)
+[Terraform for さくらのクラウド](https://github.com/yamamoto-febc/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.1`)
 
 ## `Dockerfile` links
 
