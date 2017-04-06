@@ -5,7 +5,7 @@
 
 ## `Dockerfile` links
 
-  - [`0.7.3`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.7.3/)
+  - [`0.8.0`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.8.0/)
 
 **0.6.2以降、WORKDIRが`/workdir`へ変更されました**
 
