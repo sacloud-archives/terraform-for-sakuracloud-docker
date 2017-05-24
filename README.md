@@ -1,11 +1,11 @@
 
 # Terraform for さくらのクラウド
 
-[Terraform for さくらのクラウド](https://github.com/yamamoto-febc/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.4`)
+[Terraform for さくらのクラウド](https://github.com/sacloud/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.4`)
 
 ## `Dockerfile` links
 
-  - [`0.9.1`,`latest`(Dockerfile)](https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/tree/master/0.9.1/)
+  - [`0.10.0`,`latest`(Dockerfile)](https://github.com/sacloud/terraform-for-sakuracloud-docker/tree/master/0.10.0/)
 
 **0.6.2以降、WORKDIRが`/workdir`へ変更されました**
 
@@ -37,8 +37,8 @@ terraform plan
 #### 1) 以下コマンドで`docker-compose.yml`と環境変数設定ファイルのひな形をダウンロードします。
 
 ```bash
-curl -L https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/raw/master/docker-compose.yml > docker-compose.yml
-curl -L https://github.com/yamamoto-febc/terraform-for-sakuracloud-docker/raw/master/env-sample > .env
+curl -L https://github.com/sacloud/terraform-for-sakuracloud-docker/raw/master/docker-compose.yml > docker-compose.yml
+curl -L https://github.com/sacloud/terraform-for-sakuracloud-docker/raw/master/env-sample > .env
 ```
 
 #### 2) (**オプション**)環境変数設定ファイルを編集します。
