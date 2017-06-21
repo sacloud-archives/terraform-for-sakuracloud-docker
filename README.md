@@ -1,11 +1,11 @@
 
 # Terraform for さくらのクラウド
 
-[Terraform for さくらのクラウド](https://github.com/sacloud/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.6`)
+[Terraform for さくらのクラウド](https://github.com/sacloud/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.8`)
 
 ## `Dockerfile` links
 
-  - [`0.10.1`,`latest`(Dockerfile)](https://github.com/sacloud/terraform-for-sakuracloud-docker/tree/master/0.10.1/)
+  - [`0.10.2`,`latest`(Dockerfile)](https://github.com/sacloud/terraform-for-sakuracloud-docker/tree/master/0.10.2/)
 
 **0.6.2以降、WORKDIRが`/workdir`へ変更されました**
 
