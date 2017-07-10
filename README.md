@@ -1,7 +1,7 @@
 
 # Terraform for さくらのクラウド
 
-[Terraform for さくらのクラウド](https://github.com/sacloud/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.11`)
+[Terraform for さくらのクラウド](https://github.com/sacloud/terraform-provider-sakuracloud)用Dockerイメージ(Terraform : `0.9.9`)
 
 ## `Dockerfile` links
 
