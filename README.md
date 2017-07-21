@@ -5,7 +5,7 @@
 
 ## `Dockerfile` links
 
-  - [`0.10.4`,`latest`(Dockerfile)](https://github.com/sacloud/terraform-for-sakuracloud-docker/tree/master/0.10.2/)
+  - [`0.11.0`,`latest`(Dockerfile)](https://github.com/sacloud/terraform-for-sakuracloud-docker/tree/master/0.11.0/)
 
 **0.6.2以降、WORKDIRが`/workdir`へ変更されました**
 
