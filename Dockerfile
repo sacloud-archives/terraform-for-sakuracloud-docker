@@ -1,9 +1,9 @@
-FROM hashicorp/terraform:0.10.6
+FROM hashicorp/terraform:0.10.8
 MAINTAINER Kazumichi Yamamoto <yamamoto.febc@gmail.com>
 
 LABEL io.whalebrew.config.environment '["SAKURACLOUD_ACCESS_TOKEN", "SAKURACLOUD_ACCESS_TOKEN_SECRET" , "SAKURACLOUD_ZONE" , "SAKURACLOUD_TIMEOUT" , "SAKURACLOUD_TRACE_MODE","SACLOUD_OJS_ACCESS_KEY_ID","SACLOUD_OJS_SECRET_ACCESS_KEY" ]'
 
-ENV TERRAFORM_SAKURACLOUD_VERSION=0.13.1
+ENV TERRAFORM_SAKURACLOUD_VERSION=0.14.0
 
 ADD https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v${TERRAFORM_SAKURACLOUD_VERSION}/terraform-provider-sakuracloud_linux-amd64.zip ./
 RUN unzip terraform-provider-sakuracloud_linux-amd64.zip -d /bin
