@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:
+FROM hashicorp/terraform:0.11.13
 MAINTAINER Kazumichi Yamamoto <yamamoto.febc@gmail.com>
 
 LABEL io.whalebrew.config.environment '["SAKURACLOUD_ACCESS_TOKEN", "SAKURACLOUD_ACCESS_TOKEN_SECRET" , "SAKURACLOUD_ZONE" , "SAKURACLOUD_TIMEOUT" , "SAKURACLOUD_TRACE_MODE","SACLOUD_OJS_ACCESS_KEY_ID","SACLOUD_OJS_SECRET_ACCESS_KEY" ]'
