@@ -1,3 +1,5 @@
+> :warning: Terraform for さくらのクラウドのDockerHubでのDockerイメージ配布は廃止されました。  
+
 # Terraform for さくらのクラウド
 
 [Terraform for さくらのクラウド](https://github.com/sacloud/terraform-provider-sakuracloud)用Dockerイメージ
